@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Proyectos GitHub\\proyecto-fundacion\\ApiFundacion\\ApiFundacion\\ApiFundacion.csproj": {}
+    "C:\\Proyectos GitHub\\api-fundacion\\ApiFundacion\\ApiFundacion.csproj": {}
   },
   "projects": {
-    "C:\\Proyectos GitHub\\proyecto-fundacion\\ApiFundacion\\ApiFundacion\\ApiFundacion.csproj": {
+    "C:\\Proyectos GitHub\\api-fundacion\\ApiFundacion\\ApiFundacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyectos GitHub\\proyecto-fundacion\\ApiFundacion\\ApiFundacion\\ApiFundacion.csproj",
+        "projectUniqueName": "C:\\Proyectos GitHub\\api-fundacion\\ApiFundacion\\ApiFundacion.csproj",
         "projectName": "ApiFundacion",
-        "projectPath": "C:\\Proyectos GitHub\\proyecto-fundacion\\ApiFundacion\\ApiFundacion\\ApiFundacion.csproj",
+        "projectPath": "C:\\Proyectos GitHub\\api-fundacion\\ApiFundacion\\ApiFundacion.csproj",
         "packagesPath": "C:\\Users\\lauta\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyectos GitHub\\proyecto-fundacion\\ApiFundacion\\ApiFundacion\\obj\\",
+        "outputPath": "C:\\Proyectos GitHub\\api-fundacion\\ApiFundacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lauta\\AppData\\Roaming\\NuGet\\NuGet.Config",
