@@ -25,6 +25,7 @@ using System.Text;
 using ApiFundacion.Repository.PersonalRepository;
 using ApiFundacion.Resultados;
 using ApiFundacion.Repository.ValidadoresRepository;
+using System.Net.NetworkInformation;
 
 namespace ApiFundacion
 {
@@ -40,12 +41,12 @@ namespace ApiFundacion
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var connectionString = Environment.GetEnvironmentVariable("CONNECTION_STRING");
+
             services.AddDbContext<dena66utud3alcContext>(option =>
-            option.UseNpgsql(Configuration.GetConnectionString("DefaultConnectionString")));
+            option.UseNpgsql(connectionString));
 
             services.Configure<Settings>(Configuration.GetSection("Settings"));
-
-            
 
             services.AddAutoMapper(configuration => {
                 configuration.CreateMap<Area, AreasDTO>();

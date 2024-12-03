@@ -8,6 +8,8 @@ namespace ApiFundacion.Models
 {
     public partial class dena66utud3alcContext : DbContext
     {
+        public string connectionString = Environment.GetEnvironmentVariable("CONNECTION_STRING");
+
         public dena66utud3alcContext()
         {
         }
@@ -33,7 +35,7 @@ namespace ApiFundacion.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseNpgsql("");
+                optionsBuilder.UseNpgsql(connectionString);
             }
         }
 

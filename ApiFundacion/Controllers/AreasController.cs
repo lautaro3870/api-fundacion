@@ -17,7 +17,7 @@ namespace ApiFundacion.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    // [Authorize]
     public class AreasController : ControllerBase
     {
         private readonly IAreaRepository areaRepository;
