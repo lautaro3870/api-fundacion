@@ -19,5 +19,10 @@ RUN dotnet publish "ApiFundacion.csproj" -c Release -o /app/publish
 # Etapa final
 FROM base AS final
 WORKDIR /app
+
+# Pasar el argumento CONNECTION_STRING al contenedor como variable de entorno
+ARG CONNECTION_STRING
+ENV CONNECTION_STRING=${CONNECTION_STRING}
+
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "ApiFundacion.dll"]
