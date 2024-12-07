@@ -21,5 +21,5 @@ jobs:
 
     - name: Build and Push Docker Image
       run: |
-        docker build --build-arg CONNECTION_STRING=${{ secrets.CONNECTION_STRING }} -t lau1234/api-fundacion:latest .
+        docker build -t lau1234/api-fundacion:latest .
         docker push lau1234/api-fundacion:latest
